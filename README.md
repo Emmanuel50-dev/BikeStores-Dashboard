@@ -55,3 +55,49 @@ Here's the step by step process involved in developing the dashboard
 
 
 ## SQL Code Snippets
+
+This SQL code below selects information from several tables in a database, joining them together and calculating the total units and revenue for each order. It also includes information about the customers, products, categories, stores, and sales representatives associated with each order.
+
+```
+SELECT
+ord.order_id,
+CONCAT(cus.first_name, ' ', cus.last_name) AS 'customers' ,
+cus.city,
+cus.state,
+ord.order_date,
+SUM(ite.quantity) AS 'total_units',
+SUM(ite.quantity * ite.list_price) AS 'revenue',
+pro.product_name,
+cat.category_name,
+sto.store_name,
+CONCAT(sta.first_name, ' ', sta.last_name) AS 'sales_rep'
+FROM sales.orders ord
+JOIN sales.customers cus
+ON ord.customer_id = cus.customer_id
+JOIN sales.order_items ite
+ON ord.order_id = ite.order_id
+JOIN production.products pro
+ON ite.product_id = pro.product_id 
+JOIN production.categories cat
+ON pro.category_id = cat.category_id
+JOIN sales.stores sto
+ON ord.store_id = sto.store_id
+JOIN sales.staffs sta
+ON ord.staff_id = sta.staff_id
+
+```
+
+The code below groups the query results based on specific columns, including customer name and location, order details, product and category names, store name, and sales rep name.
+
+``` GROUP BY 
+  ord.order_id,
+CONCAT(cus.first_name, ' ', cus.last_name),
+cus.city,
+cus.state,
+ord.order_date,
+pro.product_name,
+cat.category_name,
+sto.store_name,
+CONCAT(sta.first_name, ' ', sta.last_name)
+
+```
