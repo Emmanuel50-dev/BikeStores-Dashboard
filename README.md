@@ -20,6 +20,7 @@ If you're using SQL server, follow these steps to load the database:
 
 ## STEP 2. Writing the Scripts
 I used the database schema to join the tables together and wrote SQL queries to select and transform the data for my tables: The SQL code to transform the data and create these tables is available [here](https://github.com/Emmanuel50-dev/BikeStores-Dashboard/blob/main/SQLQuery1.sql) 
+
 Certain code snippets are also available at the bottom of this README file
 
 ## STEP 3. Connecting SQL dataset to Excel Workbook
