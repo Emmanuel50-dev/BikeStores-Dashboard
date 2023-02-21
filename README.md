@@ -30,6 +30,28 @@ Here's what happened in this phase
 4. Creating map chart
 5. Setting up Excel dashboard
 6. Adding slicers to make Excel dashboard interactive
-The final excel table is available 
+
+The final excel dashboard is available [here](https://github.com/Emmanuel50-dev/BikeStores-Dashboard/blob/main/Bike%20Stores.xlsx)
+
+##  STEP 4. Creating the dashboards
+
+The last step involved creating a Tableau dashboard. Tableau functionality and features used:
+
+Dynamic Parameters
+Parameter Actions
+Level of Detail Expressions
+Navigation Buttons
+Custom Shapes and Custom Number Formatting
+
+Here's the step by step process involved in developing the dashboard
+1. Connecting Excel dataset to Tableau Workbook
+2. Making charts
+3. Using parameters and sets to make Top N chart
+4. Creating banner and action filters for dashboard
+5. Creating the executive dashboard
+6. Making executive dashboard interactive
+7. Using calculated field to make text contextual
+8. Saving dashboard to the Tableau Public server
 
 
+## SQL Code Snippets
