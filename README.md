@@ -7,4 +7,16 @@ The dashboard is available [here](https://public.tableau.com/views/BikeStoresDas
 
 Below I outlined the steps involved in the creation of this dashboard.
 ## STEP 1. Installing the Database
-First I installed the SQL Server Management Studio (SSMS) onto my local machine and ran the BikeStore database installation scripts locally. The scripts to create and load the database are available
+First I installed the SQL Server Management Studio (SSMS) onto my local machine and ran the BikeStore database installation scripts locally. The scripts to create and load the database are available [here](https://github.com/Emmanuel50-dev/BikeStores-Dashboard/blob/main/SQL-Server-Sample-Database.zip)
+
+If you're using SQL server, follow these steps to load the database:
+
+1. Open SQL server, create a new database and give it a name (e.g. BikeStore)
+2. Select the new database in the SQL server
+3. Open the zip downloaded from the link I provided 
+4. Open the 'create objects' query file and then execute it in the SQL server
+5. Open the 'load data' query file and then execute it in the SQL server
+
+
+## STEP 2. Writing the Scripts
+I used the database schema to join the tables together and wrote SQL queries to select and transform the data for my tables:The SQL code to transform the data and create these tables is available
